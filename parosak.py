@@ -116,4 +116,10 @@ def feladat_30(lista):
             listasd.append(elem.nev)
     return listasd
 
-
+def feladat_32(lista):
+    x = input("Kérem adjon meg egy nyelvet és kiírom az adott nyelvet tanulók sorszámát!")
+    listasd = []
+    for elem in lista:
+        if elem.mnyelv == x:
+            listasd.append(elem.nev)
+    return lista
