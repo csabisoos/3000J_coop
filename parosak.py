@@ -60,3 +60,9 @@ def feladat_18(lista):
         if elem.mnyelv == "orosz":
             return True
     return False
+
+def feladat_20(lista):
+    for elem in lista:
+        if elem.mnyelv == "spanyol":
+            return True
+    return False
