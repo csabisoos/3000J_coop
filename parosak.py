@@ -27,3 +27,9 @@ def feladat_8(lista):
             x += 1 
     return x
 
+def feladat_10(lista):
+    x = 0
+    for elem in lista:
+        if elem.acsop[0] == "1.":
+            x += 1
+    return x
