@@ -13,4 +13,10 @@ def feladat_4(lista):
             x += 1
     return x
 
+def feladat_6(lista):
+    x = 0
+    for elem in lista:
+        if elem.testverszama > 2:
+            x += 1
+    return x
 
