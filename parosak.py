@@ -47,3 +47,16 @@ def feladat_14(lista):
         if elem.micsop == "alfa" and elem.nem == "L":
             x += 1
     return x
+
+def feladat_16(lista):
+    x = 0
+    for elem in lista:
+        if elem.micsop == "alfa" and elem.nem == "F":
+            x += 1
+    return x
+
+def feladat_18(lista):
+    for elem in lista:
+        if elem.mnyelv == "orosz":
+            return True
+    return False
