@@ -76,3 +76,11 @@ def feladat_17(lista):
         if d.nem == "fiú" and d.micsop == "beta" :
             result += 1
     return result
+
+# 19) Van-e olyan diák, aki a 2. idegen nyelvként olaszt tanul?
+
+def feladat_19(lista):
+    for d in lista:
+        if d.mnyelv == "olasz":
+            return True
+    return False
