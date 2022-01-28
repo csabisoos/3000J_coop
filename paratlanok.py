@@ -115,14 +115,14 @@ def feladat_25(lista):
 
 # 27) Avon Mór hiányzott a legutóbbi angol órán, szeretné bepótolni a hiányzást. Adja meg azon tanulók nevét, akik vele azonos angol csoportba járnak. 
 
-def getindexbyname(lista, name):
+def getelementbyname(lista, name):
     for d in lista:
         if d.nev == name:
             return d
 
 def feladat_27(lista):
     result = []
-    a = getindexbyname(lista, "Avon Mór")
+    a = getelementbyname(lista, "Avon Mór")
     for d in lista:
         if d.nev != a.nev and d.acsop == a.acsop:
             result.append(d.nev)
@@ -132,8 +132,20 @@ def feladat_27(lista):
 
 def feladat_29(lista):
     result = []
-    a = getindexbyname(lista, "Citad Ella")
+    a = getelementbyname(lista, "Citad Ella")
     for d in lista:
         if d.nev != a.nev and d.acsop == a.acsop:
             result.append(d.nev)
     return result
+
+# 31) A spanyol vagy a német nyelvet tanulják-e többben az osztáyban?
+
+def mnyelvtanuloszam(lista, mnyelv):
+    result = 0
+    for d in lista:
+        if d.mnyelv == mnyelv:
+            result+=1
+    return result
+
+def feladat_31(lista):
+    return mnyelvtanuloszam("spanyol") < mnyelvtanuloszam("német")
