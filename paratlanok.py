@@ -112,3 +112,18 @@ def feladat_25(lista):
         if d.testverszama+3 != d.egyuttlakok:
             result += 1
     return result
+
+# 27) Avon Mór hiányzott a legutóbbi angol órán, szeretné bepótolni a hiányzást. Adja meg azon tanulók nevét, akik vele azonos angol csoportba járnak. 
+
+def getindexbyname(lista, name):
+    for d in lista:
+        if d.nev == name:
+            return d
+
+def feladat_27(lista):
+    result = []
+    a = getindexbyname(lista, "Avon Mór")
+    for d in lista:
+        if d.nev != a.nev and d.acsop == a.acsop:
+            result.append(d.nev)
+    return result
