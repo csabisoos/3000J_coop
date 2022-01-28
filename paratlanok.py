@@ -103,3 +103,12 @@ def feladat_23(lista):
         if d.nem == "lány" and d.acsop.split('.') == "1" or d.acsop.split('.') == "2":
             result += 1
     return result
+
+# 25) Viszonylag kevés azon családok száma, ahol az együttlakók száma és a testvérek szám között nem három a különbség. Adja meg a számukat!
+
+def feladat_25(lista):
+    result = 0
+    for d in lista:
+        if d.testverszama+3 != d.egyuttlakok:
+            result += 1
+    return result
