@@ -28,4 +28,12 @@ def feladat_7(lista):
         if d.testverszama < 2:
             result.append(d.nev)
     return result
-    
+
+# 9) Gyűjtse ki azon fiú diákok nevét, akik a 2. idegen nyelvként a németet tanulják!
+
+def feladat_9(lista):
+    result = []
+    for d in lista:
+        if d.nem == "fiú" and d.mnyelv == "német":
+            result.append(d.nev)
+    return result
