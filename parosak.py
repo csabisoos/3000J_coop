@@ -33,3 +33,12 @@ def feladat_10(lista):
         if elem.acsop[0] == "1.":
             x += 1
     return x
+
+def feladat_12(lista):
+    x = 0
+    for elem in lista:
+        if elem.micsop == "alfa":
+            x += 1
+    return x
+
+    
