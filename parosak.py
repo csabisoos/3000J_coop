@@ -66,3 +66,15 @@ def feladat_20(lista):
         if elem.mnyelv == "spanyol":
             return True
     return False
+
+def feladat_22(lista):
+    x = ""
+    y = 0
+    for elem in lista:
+        if elem.testverszama > y:
+            y = elem.testverszama
+            x = elem.nev
+    return x
+
+
+
