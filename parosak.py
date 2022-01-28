@@ -104,3 +104,16 @@ def feladat_28(lista):
         if elem.acsop == x:
             listasd.append(elem.nev)
     return listasd
+
+def feladat_30(lista):
+    x = ""
+    listasd=[]
+    for elem in lista:
+        if elem.nev == "Hát Izsák":
+            x = elem.acsop[0]
+    for elem in lista:
+        if elem.acsop == x:
+            listasd.append(elem.nev)
+    return listasd
+
+
