@@ -41,4 +41,9 @@ def feladat_12(lista):
             x += 1
     return x
 
-    
+def feladat_14(lista):
+    x = 0
+    for elem in lista:
+        if elem.micsop == "alfa" and elem.nem == "L":
+            x += 1
+    return x
