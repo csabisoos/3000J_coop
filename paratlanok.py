@@ -127,3 +127,13 @@ def feladat_27(lista):
         if d.nev != a.nev and d.acsop == a.acsop:
             result.append(d.nev)
     return result
+
+# 29) Citad Ella hiányzott a legutóbbi angol órán, szeretné bepótolni a hiányzást. Adja meg azon tanulók nevét, akik vele azonos angol csoportba járnak. 
+
+def feladat_29(lista):
+    result = []
+    a = getindexbyname(lista, "Citad Ella")
+    for d in lista:
+        if d.nev != a.nev and d.acsop == a.acsop:
+            result.append(d.nev)
+    return result
