@@ -138,3 +138,4 @@ def feladat_32(lista):
         if elem.mnyelv == x:
             listasd.append(elem.nev)
     return lista
+"""github"""
