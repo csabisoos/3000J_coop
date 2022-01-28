@@ -1,4 +1,7 @@
 #1) Hány diák tanul az osztályban?
+from cgitb import reset
+
+
 def feladat_1(lista):
     return len(lista)
 
@@ -36,4 +39,13 @@ def feladat_9(lista):
     for d in lista:
         if d.nem == "fiú" and d.mnyelv == "német":
             result.append(d.nev)
+    return result
+
+# 11) Hány diák tanul, a kettes angol csoportban?
+
+def feladat_11(lista):
+    result = 0
+    for d in lista:
+        if d.acsop.split('.')[0] == 2:
+            result +=1
     return result
