@@ -6,6 +6,21 @@ def feladat_2(lista):
             fiuk += 1
     return fiuk
 
+def predikatum(tanulo):
+    return tanulo.nem=="F"
+def feladat_2_lambda(lista):
+    # C# LINQ: x => x.nem 
+    # Python: lambda x: x.nem 
+    # C# LINQ: (x,y) => x<y && x>a 
+    # Python: lambda x,y: x<y
+    ## C++: [](int x, int y){return x<y;} 
+    
+    # lista.Where(t=>t.nem=="F").Count()
+    return len(list(filter(lambda t: t.nem=="F", lista)))
+    return len(list(filter(predikatum, lista)))
+    #return lista.Count(t=>t.nem=="F")
+
+
 def feladat_4(lista):
     x = 0
     for elem in lista:

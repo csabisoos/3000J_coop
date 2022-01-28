@@ -22,3 +22,13 @@ with open("input.txt", "r", encoding="utf8") as f:
 
 print(len(Tanulo.lista))
 """
+
+
+"""
+# lambda összehasonlitasa
+from parosak import feladat_2_lambda, feladat_2
+
+print(feladat_2_lambda(Tanulo.lista))
+print(feladat_2(Tanulo.lista))
+
+"""
