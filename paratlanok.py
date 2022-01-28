@@ -49,3 +49,12 @@ def feladat_11(lista):
         if d.acsop.split('.')[0] == 2:
             result +=1
     return result
+
+# 13) Hány diák tanul, az beta matematika csoportban?
+
+def feladat_13(lista):
+    result = 0
+    for d in lista:
+        if d.micsop == "beta":
+            result += 1
+    return result
