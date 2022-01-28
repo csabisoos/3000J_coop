@@ -84,3 +84,12 @@ def feladat_19(lista):
         if d.mnyelv == "olasz":
             return True
     return False
+
+# 21) Mekkora a legnagyobb család az osztályban?
+
+def feladat_21(lista):
+    result = 0
+    for d in lista:
+        if result < d.egyuttlakok:
+            result = d.egyuttlakok
+    return result
