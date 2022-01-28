@@ -58,3 +58,13 @@ def feladat_13(lista):
         if d.micsop == "beta":
             result += 1
     return result
+
+# 15) Hány lány diák tanul, a beta matematika csoportban?
+
+def feladat_15(lista):
+    result = 0
+    for d in lista:
+        if d.nem == "lány" and d.micsop == "beta" :
+            result += 1
+    return result
+    
