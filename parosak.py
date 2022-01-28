@@ -82,3 +82,15 @@ def feladat_24(lista):
         if elem.nem == "F" and elem.acsop[0] == "3." or "4." and elem.testverszama == 0 or 2:
             listasd.append(elem.nev)
     return listasd
+
+def feladat_26(lista):
+    x = ""
+    listasd=[]
+    for elem in lista:
+        if elem.nev == "Dári Dóra":
+            x = elem.acsop[0]
+    for elem in lista:
+        if elem.acsop == x:
+            listasd.append(elem.nev)
+    return listasd
+
