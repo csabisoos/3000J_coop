@@ -1,5 +1,6 @@
 #1) Hány diák tanul az osztályban?
 from cgitb import reset
+from unittest import result
 
 
 def feladat_1(lista):
@@ -46,7 +47,7 @@ def feladat_9(lista):
 def feladat_11(lista):
     result = 0
     for d in lista:
-        if d.acsop.split('.')[0] == 2:
+        if d.acsop.split('.')[0] == '2':
             result +=1
     return result
 
@@ -92,4 +93,13 @@ def feladat_21(lista):
     for d in lista:
         if result < d.egyuttlakok:
             result = d.egyuttlakok
+    return result
+
+# 23) Gyűjtse ki azon lány diákok nevét, akik az egyes vagy kettes angol csoportban vannak!
+
+def feladat_23(lista):
+    result = 0
+    for d in lista:
+        if d.nem == "lány" and d.acsop.split('.') == "1" or d.acsop.split('.') == "2":
+            result += 1
     return result
