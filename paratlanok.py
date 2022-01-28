@@ -19,3 +19,13 @@ def feladat_5(lista):
         if d.testverszama < 1:
             result.append(d.nev)
     return result
+
+# 7) Gyűjtse ki azon diákok nevét, akiknek több mint 2 testvérük van!
+
+def feladat_7(lista):
+    result = []
+    for d in lista:
+        if d.testverszama < 2:
+            result.append(d.nev)
+    return result
+    
