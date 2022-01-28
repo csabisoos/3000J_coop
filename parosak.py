@@ -76,5 +76,9 @@ def feladat_22(lista):
             x = elem.nev
     return x
 
-
-
+def feladat_24(lista):
+    listasd = []
+    for elem in lista:
+        if elem.nem == "F" and elem.acsop[0] == "3." or "4." and elem.testverszama == 0 or 2:
+            listasd.append(elem.nev)
+    return listasd
