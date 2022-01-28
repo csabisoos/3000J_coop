@@ -67,4 +67,12 @@ def feladat_15(lista):
         if d.nem == "lány" and d.micsop == "beta" :
             result += 1
     return result
-    
+
+# 17) Hány fiú diák tanul, a beta matematika csoportban?
+
+def feladat_17(lista):
+    result = 0
+    for d in lista:
+        if d.nem == "fiú" and d.micsop == "beta" :
+            result += 1
+    return result
